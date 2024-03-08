@@ -4,12 +4,17 @@
 
 {% block body %}
 
+    <div>
+        <h1 class="display-6 info">Turn any playlist into a course by clicking on it</h1>
+    </div>
     <div class="playlist-container">
         <div class="list-container">
 
-            {% for i in range %}
+            {% for item in items %}
                 <div class="vid-list">
-                    <a href=""><img src="{% static 'socialnetwork/images/thumbnail.jpg' %}" alt="" class="thumbnail"></a>
+                    <a href="">
+                        <img src={{item.thumbnail}} alt="" class="thumbnail">
+                    </a>
                     <div class="flex-div">
                         <img src="{% static 'socialnetwork/images/default.png' %}" alt="" width="45" height="45">
                         <div class="vid-info">

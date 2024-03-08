@@ -36,8 +36,20 @@
     opacity: .5;
 }
 
+.vid-list .thumbnail:hover .tooltiptext{
+    visibility: visible;
+}
+
 .vid-list .flex-div {
     align-items: flex-start;
     margin-top:7px;
 }
+
+.info{
+    background-color: #d6edf6;
+    padding: 1%;
+    text-align: center;
+    font-weight: bold;
+}
+
 
