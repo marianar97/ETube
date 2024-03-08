@@ -52,4 +52,11 @@
     font-weight: bold;
 }
 
+.channel-thumbnail{
+    border-radius: 50%;
+}
 
+.playlist-title{
+    text-decoration: None;
+    color: black;
+}

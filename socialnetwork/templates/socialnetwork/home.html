@@ -16,10 +16,10 @@
                         <img src={{item.thumbnail}} alt="" class="thumbnail">
                     </a>
                     <div class="flex-div">
-                        <img src="{% static 'socialnetwork/images/default.png' %}" alt="" width="45" height="45">
+                        <img src={{item.channel_thumbnail}} alt="" width="45" height="45" class="channel-thumbnail">
                         <div class="vid-info">
-                            <a href="">Computer Science playlist</a>
-                            <p>Channel name</p>
+                            <a href="" class="playlist-title">{{item.title}}</a>
+                            <p>{{item.channel_name}}</p>
                         </div>  
                     </div> 
                 </div>
