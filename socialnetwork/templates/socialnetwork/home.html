@@ -1,1 +1,29 @@
 {% extends "socialnetwork/base.html" %}
+
+{% load static %}
+
+{% block body %}
+
+    <div class="playlist-container">
+        <div class="list-container">
+
+            {% for i in range %}
+                <div class="vid-list">
+                    <a href=""><img src="{% static 'socialnetwork/images/thumbnail.jpg' %}" alt="" class="thumbnail"></a>
+                    <div class="flex-div">
+                        <img src="{% static 'socialnetwork/images/default.png' %}" alt="" width="45" height="45">
+                        <div class="vid-info">
+                            <a href="">Computer Science playlist</a>
+                            <p>Channel name</p>
+                        </div>  
+                    </div> 
+                </div>
+
+            {% endfor %}
+
+        </div>
+    </div>
+
+
+
+{% endblock %}
